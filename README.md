@@ -61,3 +61,5 @@ If the live deployment is unavailable, the app can be run locally using the step
 Built by Dave (@DaveTheCryptoOG)
 
 Web3 Content Strategist | Thread Writer | Technical Storyteller
+
+If the app appears inactive, please refresh after a short wait as the service may be restarting due to GPU limits.
