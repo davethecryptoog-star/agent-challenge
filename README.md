@@ -1,146 +1,63 @@
-<<<<<<< HEAD
-# ThreadForge AI 🚀
-=======
-## Overview
+# ThreadForge AI
 
-ThreadForge AI is an agent-based chat interface built on ElizaOS.
+ThreadForge AI is a Web3 content strategist agent built on ElizaOS.
 
-Users can:
-- Select an agent (e.g. ThreadForge AI)
-- Start a chat session
-- Send messages
-- Receive responses from the agent
+It transforms complex crypto and Web3 concepts into clear, high-impact X threads, helping users understand projects, systems, and narratives in a simple and structured way.
 
-## Core User Flow
+## 🚀 Live App
 
-1. User selects "ThreadForge AI" from the agents list
-2. A chat session is opened
-3. User types a message
-4. The system processes and returns a response
-5. Conversation continues in real time
-
-## Expected Behavior
-
-- Chat interface should load correctly at /chat
-- Input field should accept user messages
-- Messages should appear in the chat window
-- Agent should respond after user input
-- UI should not crash when agent is selected or missing
-
-# Project Starter
->>>>>>> 2ec6a32 (ThreadForge AI working version)
-
-> Turn ideas into high-converting Twitter threads in seconds.
-
-ThreadForge AI is an AI agent built on ElizaOS that generates structured, viral-ready Twitter threads, content ideas, and short-form scripts instantly.
-
----
-
-## 🔴 Live App
-
-👉 https://4ovkcGPdbADqcXHCuktCB5i4fdmQzL8U4VGS72K8RDEy.node.k8s.prd.nos.ci
-
----
+👉 https://2Se7AXXEeNcb8oCdpwQXdmYp38VJD5eGbQfSzSnGZT5j.node.k8s.prd.nos.ci
 
 ## 🎥 Demo
 
 👉 https://drive.google.com/file/d/1xLqgwqZ_NT34UaQ5WyGPaa1NoOksMj85/view?usp=drivesdk
 
----
+## 🧠 What It Does
 
-## ⚡ What this solves
+ThreadForge AI helps you:
 
-Writing high-performing threads requires:
-
-- Strong hooks  
-- Structured flow  
-- Clear messaging  
-- Conversion-focused endings  
-
-Most people struggle with this.
-
-ThreadForge AI removes the friction by turning simple prompts into fully structured, high-quality threads instantly.
-
----
-
-## ✨ Features
-
-- Generates high-converting Twitter threads  
-- Produces strong hooks and engaging openings  
-- Maintains clean structure and logical flow  
-- Adds clear and effective CTAs  
-- Creates viral content ideas  
-- Writes short-form scripts  
-
----
-
-## 🧠 How it works
-
-ThreadForge AI runs as an ElizaOS agent that:
-
-1. Accepts user prompts  
-2. Processes intent and structure  
-3. Generates optimized multi-part content  
-4. Outputs ready-to-use threads instantly  
-
-Deployed on Nosana using GPU infrastructure for fast and scalable execution.
-
----
-
-## 🛠️ How to use
-
-1. Open the live app  
-2. Select **ThreadForge AI**  
-3. Click **New Chat**  
-4. Enter your prompt  
-
-Example:
-
-Write a high-converting Twitter thread about AI agents with a strong hook, 6 tweets, and a powerful closing CTA.
-
-5. Instantly receive a structured, ready-to-post thread  
-
----
-
-## 💡 Example Prompt
-
-Write a high-converting Twitter thread about AI agents with a strong hook, 6 tweets, and a powerful closing CTA.
-
----
+- Break down crypto and Web3 projects into simple explanations  
+- Generate high-quality X (Twitter) threads  
+- Structure content with strong hooks and flow  
+- Simplify complex technical concepts  
+- Create engaging, educational narratives  
 
 ## ⚙️ Tech Stack
 
-- ElizaOS (AI agent framework)  
-- Nosana (GPU compute + deployment)  
-- TypeScript  
+- ElizaOS  
+- React + Vite  
+- Docker (containerized)  
+- GHCR (GitHub Container Registry)  
+- Nosana (decentralized deployment)  
 
----
+## 🛠️ How to Run Locally
 
-## 🚀 Deployment
+bun install  
+bun run dev  
 
-ThreadForge AI is deployed on Nosana with GPU support and is accessible directly via the browser.
+Then open:  
+http://localhost:3000  
 
----
+## 📦 Deployment
 
-## 📊 Why this matters
+The app is containerized and deployed via:
 
-Content is one of the biggest drivers of attention in crypto.
+- Docker image → GHCR  
+- Runtime → Nosana infrastructure  
 
-But:
-- Most creators lack structure  
-- Most threads don’t convert  
-- Execution takes time  
+## 💡 Example Use Cases
 
-ThreadForge AI compresses the entire process into seconds while keeping the creator in control of strategy and direction.
+- "Break down this crypto project into a thread"  
+- "Explain this protocol in simple terms"  
+- "Write a viral Web3 thread with a strong hook"  
+- "Summarize tokenomics clearly"  
 
----
+## 📌 Notes
 
-## 🎯 Vision
-
-To empower creators with tools that amplify execution speed without replacing creativity.
-
----
+If the live deployment is unavailable, the app can be run locally using the steps above.
 
 ## 👤 Author
 
-Built by Dave (DaveTheCryptoOG)
+Built by Dave (@DaveTheCryptoOG)
+
+Web3 Content Strategist | Thread Writer | Technical Storyteller
