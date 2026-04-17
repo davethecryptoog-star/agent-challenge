@@ -1,0 +1,18 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:5173/",
+  "executionArgs": {
+    "projectName": "threadforge-ai",
+    "projectPath": "C:\\Users\\admin\\threadforge-ai",
+    "testIds": [],
+    "additionalInstruction": "Target the Vite frontend served from src/frontend/index.html. Assertions should match the actual UI strings: greeting is \"Hello {agentId}\" and missing-agent error is \"Error: Agent ID not found\". Do not assert on \"agent-id-missing\" or generic \"Agent\" text.",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-4QF6UJh_mMFgJfShLlxyhdXO-TgjHBM9B7uR8n1mgqaWJc6OZZXwsYM13arwkgURNK_vxLbXYvRoSZzIgqMerHglfrL7OD4_Mskn9-LlK88jjwYA_4z49jykXNXMl0s7uuQ"
+    }
+  },
+  "serverPort": 51472,
+  "proxy": "http://2643dcab-1610-4f3c-a719-3487008558bf:eNXvChx4LhMiMNyhwMo2VTMnBVhVvNlk@tun.testsprite.com:8080"
+}

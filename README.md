@@ -1,4 +1,34 @@
+<<<<<<< HEAD
 # ThreadForge AI 🚀
+=======
+## Overview
+
+ThreadForge AI is an agent-based chat interface built on ElizaOS.
+
+Users can:
+- Select an agent (e.g. ThreadForge AI)
+- Start a chat session
+- Send messages
+- Receive responses from the agent
+
+## Core User Flow
+
+1. User selects "ThreadForge AI" from the agents list
+2. A chat session is opened
+3. User types a message
+4. The system processes and returns a response
+5. Conversation continues in real time
+
+## Expected Behavior
+
+- Chat interface should load correctly at /chat
+- Input field should accept user messages
+- Messages should appear in the chat window
+- Agent should respond after user input
+- UI should not crash when agent is selected or missing
+
+# Project Starter
+>>>>>>> 2ec6a32 (ThreadForge AI working version)
 
 > Turn ideas into high-converting Twitter threads in seconds.
 

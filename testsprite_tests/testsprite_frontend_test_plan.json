@@ -1,0 +1,125 @@
+[
+  {
+    "id": "TC001",
+    "title": "Show greeting when ELIZA_CONFIG.agentId is injected",
+    "description": "Verifies the page renders a greeting containing the injected agentId when window.ELIZA_CONFIG.agentId is present.",
+    "category": "Agent panel renders agentId",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a greeting is displayed that includes a non-empty agent identifier"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Show dedicated error when agentId injection is missing",
+    "description": "Verifies the page shows a dedicated human-readable missing-agent error state when the agentId is not injected.",
+    "category": "Agent panel renders agentId",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an agent-id-missing error state is displayed instead of a greeting"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Persist correct greeting after browser refresh",
+    "description": "Verifies that after refreshing the page, the greeting still shows a valid agent identifier without changing to an error state.",
+    "category": "Agent panel renders agentId",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Press F5"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a greeting is displayed that includes a non-empty agent identifier"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Show error when ELIZA_CONFIG exists but agentId is empty",
+    "description": "Verifies the UI shows the missing-agent error state (not an empty or undefined greeting) when ELIZA_CONFIG exists but agentId is empty.",
+    "category": "Agent panel renders agentId",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify an agent-id-missing error state is displayed instead of a greeting"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "No crash when ELIZA_CONFIG is missing entirely",
+    "description": "Verifies the app loads without crashing and shows the missing-agent error state when window.ELIZA_CONFIG is absent.",
+    "category": "Agent panel renders agentId",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page renders an agent-id-missing error state and the UI is not blank"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC006",
+    "title": "No crash when ELIZA_CONFIG is the wrong type",
+    "description": "Verifies the app remains usable and shows the missing-agent error state when window.ELIZA_CONFIG is present but not an object.",
+    "category": "Agent panel renders agentId",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the page renders an agent-id-missing error state and the UI is not blank"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC007",
+    "title": "Render long/special-character agentId safely",
+    "description": "Verifies that when agentId contains long and special characters, the greeting renders as plain text and remains readable without breaking layout.",
+    "category": "Agent panel renders agentId",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a greeting is displayed and the agent identifier is rendered as text without breaking the panel layout"
+      }
+    ],
+    "priority": "Low"
+  }
+]

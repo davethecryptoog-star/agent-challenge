@@ -1,0 +1,34 @@
+version: "2"
+type: frontend
+tech_stack:
+  - TypeScript
+  - Vite
+  - React
+  - "@tanstack/react-query"
+  - Tailwind CSS
+routes:
+  - path: /
+    file: src/frontend/index.tsx
+    auth_required: false
+    description: Minimal agent panel that reads window.ELIZA_CONFIG and renders a greeting or an error message.
+features:
+  - name: AgentId Greeting Panel
+    description: 'Displays Hello <agentId> when window.ELIZA_CONFIG.agentId is provided; otherwise shows Error: Agent ID not found.'
+    files:
+      - src/frontend/index.html
+      - src/frontend/index.tsx
+    entry_route: /
+    user_interactions:
+      - Load the page
+      - (Optional) Inject window.ELIZA_CONFIG.agentId before app init
+      - See greeting text Hello <agentId> when agentId is present
+      - 'See error text Error: Agent ID not found when agentId is missing/empty'
+    api_calls: []
+    auth_required: false
+known_limitations:
+  - issue: ELIZA_CONFIG.apiBase is defined but not used by the UI.
+    location: src/frontend/index.tsx
+    impact: The panel does not currently make any API requests; apiBase has no effect.
+  - issue: PanelComponent greeting has a typo ("Helllo") and differs from the main greeting ("Hello").
+    location: src/frontend/index.tsx
+    impact: Tests/assertions should target the main rendered view, not the exported panel component string.
